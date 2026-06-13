@@ -414,7 +414,7 @@ void displaySeatMap(int fi)
     printLine();
     cout << "  [ O ] = Free     [ X ] = Booked\n\n";
 
-    cout << "        1   2   3   4   5   6   7   8   9   10\n";
+    cout << "        1    2    3    4    5    6    7    8    9    10\n";
 
     for (int row = 0; row < 6; row++)            // outer loop - 6 rows
     {
@@ -773,7 +773,11 @@ void parseBooking(const char* line, char* code, char* pid, char* name,
     char* p = tmp;
     int   ci;
 
-    ci = 0; while (*p != '|' && *p != '\0') { code[ci++] = *p++; } code[ci] = '\0'; p++;
+    ci = 0;
+    while (*p != '|' && *p != '\0') {
+        code[ci++] = *p++;
+    } code[ci] = '\0';
+    p++;
     ci = 0; while (*p != '|' && *p != '\0') { pid[ci++] = *p++; } pid[ci] = '\0'; p++;
     ci = 0; while (*p != '|' && *p != '\0') { name[ci++] = *p++; } name[ci] = '\0'; p++;
     ci = 0; while (*p != '|' && *p != '\0') { seat[ci++] = *p++; } seat[ci] = '\0'; p++;
@@ -1017,7 +1021,7 @@ void intToStr(int n, char* buf)
     int  i = 0;
 
     while (n > 0)
-    {
+     {
         tmp[i++] = '0' + (n % 10);              // extract digits right to left
         n /= 10;
     }
