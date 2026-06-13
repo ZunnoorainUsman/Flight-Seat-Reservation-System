@@ -337,7 +337,7 @@ void loadBookings(const char* file)
     char line[BLEN];
     while (in.getline(line, BLEN))
     {
-        if (line[0] == '\0' || line[0] == '#') 
+        if (line[0] == '\0' || line[0] == '#')
             continue;
 
         if (bCount == bCap)
@@ -356,22 +356,22 @@ void loadBookings(const char* file)
         char code[10];
         int  ci = 0;
         while (*p != '|' && *p != '\0')
-        { 
+        {
             code[ci++] = *p++;
         }   // extract flight code
         code[ci] = '\0';
         p++;                                     // skip '|'
 
-        while (*p != '|' && *p != '\0') 
+        while (*p != '|' && *p != '\0')
             p++;     // skip PID
         p++;
-        while (*p != '|' && *p != '\0') 
+        while (*p != '|' && *p != '\0')
             p++;     // skip NAME
         p++;
 
         char sBuf[6];
         int  si = 0;
-        while (*p != '|' && *p != '\0') { 
+        while (*p != '|' && *p != '\0') {
             sBuf[si++] = *p++;
         }   // extract seat number
         sBuf[si] = '\0';
@@ -581,7 +581,7 @@ int cancelBooking(const char* pid)
 
         char extractID[20];
         int  ci = 0;
-        while (*p != '|' && *p != '\0') { 
+        while (*p != '|' && *p != '\0') {
             extractID[ci++] = *p++;
         }  // extract PID
         extractID[ci] = '\0';
@@ -602,7 +602,7 @@ int cancelBooking(const char* pid)
 
     char code[10];
     int  ci = 0;
-    while (*p != '|' && *p != '\0') { 
+    while (*p != '|' && *p != '\0') {
         code[ci++] = *p++;
     }   // extract flight code
     code[ci] = '\0';
@@ -613,7 +613,7 @@ int cancelBooking(const char* pid)
 
     char sBuf[6];
     ci = 0;
-    while (*p != '|' && *p != '\0') { 
+    while (*p != '|' && *p != '\0') {
         sBuf[ci++] = *p++;
     }   // extract seat number
     sBuf[ci] = '\0';
@@ -671,7 +671,7 @@ void searchByName(const char* target)
 
         char nameBuf[50];
         int  ci = 0;
-        while (*p != '|' && *p != '\0') { 
+        while (*p != '|' && *p != '\0') {
             nameBuf[ci++] = *p++;
         }   // extract name
         nameBuf[ci] = '\0';
@@ -730,7 +730,7 @@ void searchByID(const char* pid)
 
         char extractID[20];
         int  ci = 0;
-        while (*p != '|' && *p != '\0') { 
+        while (*p != '|' && *p != '\0') {
             extractID[ci++] = *p++;
         }   // extract PID
         extractID[ci] = '\0';
@@ -846,7 +846,7 @@ void exportManifest(int fi)
 
     ofstream out;
     out.open(fname);                             // ofstream - creates or overwrites
-    if (!out) { 
+    if (!out) {
         cout << "  [ERR] Cannot create file.\n";
         return;
     }
@@ -1021,7 +1021,7 @@ void intToStr(int n, char* buf)
     int  i = 0;
 
     while (n > 0)
-     {
+    {
         tmp[i++] = '0' + (n % 10);              // extract digits right to left
         n /= 10;
     }
