@@ -1,0 +1,12 @@
+================================================
+  MANIFEST : FL04   Lahore -> Dubai
+  Economy Price : Rs.450
+================================================
+  ID        NAME                     SEAT   CLASS       PAID
+------------------------------------------------
+  P005      Zara Siddiqui            22     Business    Paid
+  0622      HAMMAD AHMAD             2      ECONOMY     Paid
+------------------------------------------------
+  Total Passengers : 2
+  Revenue Collected: Rs.900.0
+================================================
