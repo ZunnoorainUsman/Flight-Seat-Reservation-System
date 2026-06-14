@@ -1,0 +1,12 @@
+================================================
+  MANIFEST : FL01   Lahore -> Karachi
+  Economy Price : Rs.85
+================================================
+  ID        NAME                     SEAT   CLASS       PAID
+------------------------------------------------
+  P002      Sara Ahmed               15     Business    Paid
+  P001      ZUNNOORIAN               1      BUSINESS    Paid
+------------------------------------------------
+  Total Passengers : 2
+  Revenue Collected: Rs.170.0
+================================================
