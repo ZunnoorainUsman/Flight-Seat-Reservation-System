@@ -1,0 +1,5 @@
+FL01 Lahore Karachi 60 8500
+FL02 Karachi Islamabad 60 7200
+FL03 Islamabad Lahore 60 7800
+FL04 Lahore Dubai 60 45000
+FL05 Karachi London 60 120000
